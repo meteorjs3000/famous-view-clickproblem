@@ -8,7 +8,9 @@
 
 			{{#View size="[undefined,undefined]" target="content"}}
 			    {{#RenderController size="[undefined,undefined]" transition="slideWindow"}}
-			        {{>yield}}
+			    	{{#Surface size="[undefined,100]" target="header"}}
+			        	{{>yield}}
+			        {{/Surface}}
 			    {{/RenderController}}
 			{{/View}}
 
